@@ -25,7 +25,12 @@ class DatabaseSeeder extends Seeder
         //     'email' => 'test@example.com',
         // ]);
         kategori::create([
-            'nama' => 'makanan'
+            'nama' => 'makanan',
+            // 'nama' => 'minuman'
+        ]);
+        kategori::create([
+            'nama' => 'minuman',
+            // 'nama' => 'minuman'
         ]);
 
         produk::create([
