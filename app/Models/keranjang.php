@@ -19,7 +19,7 @@ class keranjang extends Model
 
     protected function ambildata($data)
     {
-        return DB::insert("insert into keranjang (id_produk, jumlahbarang) values ('$data', '$data')");
+        return DB::insert("insert into keranjang (id_produk) values ('$data')");
     } 
 
     protected function tampiltabel()

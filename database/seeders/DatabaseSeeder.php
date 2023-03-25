@@ -4,6 +4,8 @@ namespace Database\Seeders;
 
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
+use App\Models\kategori;
+use App\Models\produk;
 
 class DatabaseSeeder extends Seeder
 {
@@ -20,5 +22,15 @@ class DatabaseSeeder extends Seeder
         //     'name' => 'Test User',
         //     'email' => 'test@example.com',
         // ]);
+        kategori::create([
+            'nama' => 'makanan'
+        ]);
+
+        produk::create([
+            'namaproduk' => 'nasi pecel',
+            'harga' => '15000',
+            'deskripsi' => 'manu baru disini',
+            'kategori_id' => 1
+        ]);
     }
 }

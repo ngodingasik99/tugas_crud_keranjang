@@ -21,12 +21,12 @@ class KeranjangController extends Controller
         return redirect('/keranjang');
     }
 
-    public function action($id, Request $request)
-    {
-        $data = keranjang::where('id', $id)->update([
-            "jumlahbarang" => $request->input['jumlahbarang']
-        ]);
-        dd($data);
+    // public function action($id, Request $request)
+    // {
+    //     $data = keranjang::where('id', $id)->update([
+    //         "jumlahbarang" => $request->input['jumlahbarang']
+    //     ]);
+    //     dd($data);
 
-    }
+    // }
 }
