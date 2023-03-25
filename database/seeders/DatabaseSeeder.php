@@ -19,6 +19,7 @@ class DatabaseSeeder extends Seeder
     {
         User::factory(5)->create();
         kategori::factory(2)->create();
+        produk::factory(2)->create();
         // produk::factory(10)->create();
 
         // \App\Models\User::factory()->create([
@@ -34,11 +35,11 @@ class DatabaseSeeder extends Seeder
         //     // 'nama' => 'minuman'
         // ]);
 
-        produk::create([
-            'namaproduk' => 'nasi pecel',
-            'harga' => '15000',
-            'deskripsi' => 'manu baru disini',
-            'kategori_id' => 1
-        ]);
+        // produk::create([
+        //     'namaproduk' => 'nasi pecel',
+        //     'harga' => '15000',
+        //     'deskripsi' => 'manu baru disini',
+        //     'kategori_id' => 1
+        // ]);
     }
 }
