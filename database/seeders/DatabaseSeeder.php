@@ -18,20 +18,21 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
         User::factory(5)->create();
+        kategori::factory(2)->create();
         // produk::factory(10)->create();
 
         // \App\Models\User::factory()->create([
         //     'name' => 'Test User',
         //     'email' => 'test@example.com',
         // ]);
-        kategori::create([
-            'nama' => 'makanan',
-            // 'nama' => 'minuman'
-        ]);
-        kategori::create([
-            'nama' => 'minuman',
-            // 'nama' => 'minuman'
-        ]);
+        // kategori::create([
+        //     'nama' => 'makanan',
+        //     // 'nama' => 'minuman'
+        // ]);
+        // kategori::create([
+        //     'nama' => 'minuman',
+        //     // 'nama' => 'minuman'
+        // ]);
 
         produk::create([
             'namaproduk' => 'nasi pecel',
