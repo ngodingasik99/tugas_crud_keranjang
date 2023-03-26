@@ -8,7 +8,7 @@ use Illuminate\Routing\Route as RoutingRoute;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    return view('layout/main');
+    return view('home');
 });
 
 Route::middleware(['auth'])->group(function(){
@@ -31,9 +31,6 @@ Route::middleware(['auth'])->group(function(){
     Route::get('/keranjang/{id}', [KeranjangController::class, 'action']);
 });
 
-
-
-// Route::get('/login', [LoginController::class, 'index']);
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
