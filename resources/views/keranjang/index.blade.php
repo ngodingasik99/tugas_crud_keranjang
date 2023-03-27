@@ -42,7 +42,6 @@
             </div>
           </div>
 </div>
-
 <script>
   function InputSub(number_id) {
         var harga =  parseInt(document.getElementById('harga'+number_id).value);
