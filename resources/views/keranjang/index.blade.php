@@ -17,9 +17,10 @@
             <ul class="list-group">
               <li class="list-group-item">Harag :<input type="text" id="harga{{$p}}" value="{{$item->harga}}" name="harga" readonly></li>
               <li class="list-group-item">Jumlah Barang :<input type="text" id="jumlahbarang{{$p}}" name="jumlahbarang" onkeyup="InputSub({{$p}});"></li>
-              <li class="list-group-item">Subtotal :<input type="text" id="subtutal{{$p}}" name="subtotal" onkeyup="InputSub();" readonlyp></li>
+              <li class="list-group-item">Subtotal :<input type="text" id="subtutal{{$p}}" name="subtotal" onkeyup="InputSub();" readonly></li>
             </ul>
             {{-- <a href="#" class="btn btn-primary">Go somewhere</a> --}}
+            <a href="/keranjang/{{$item->id}}" class="btn btn-danger">Delete</a>
           </div>
         </div>
       </div>

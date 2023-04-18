@@ -6,7 +6,6 @@
       <a href="{{url('/kategori/add')}}" class="btn btn-primary">+Tambah Data</a>
     </div>
     <div class="card-body">
-      {{-- <h5 class="card-title">Kategori</h5> --}}
       <table class="table">
         <thead>
           <tr>
@@ -31,5 +30,5 @@
       </table>  
     </div>
   </div>
-</div><br><br><br>
+</div>
 @endsection
